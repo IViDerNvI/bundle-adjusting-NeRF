@@ -17,7 +17,7 @@ We provide PyTorch code for all experiments: planar image alignment, NeRF/BARF o
 
 - Note: for Azure ML support for this repository, please consider checking out [this branch](https://github.com/szymanowiczs/bundle-adjusting-NeRF/tree/azureml_training_script) by Stan Szymanowicz.
 
-This code is developed with Python3 (`python3`). PyTorch 1.9+ is required.  
+This code is developed with Python3 (`python3`). PyTorch 2.8 is required.  
 It is recommended use [Anaconda](https://www.anaconda.com/products/individual) to set up the environment. Install the dependencies and activate the environment `barf-env` with
 ```bash
 conda env create --file requirements.yaml python=3
