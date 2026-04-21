@@ -10,8 +10,8 @@ dependencies:
   - easydict
   - imageio
   - ipdb
-  - pytorch>=1.9.0
-  - torchvision
+  - pytorch>=2.8,<2.9
+  - torchvision>=0.23,<0.24
   - tensorboard
   - visdom
   - matplotlib
