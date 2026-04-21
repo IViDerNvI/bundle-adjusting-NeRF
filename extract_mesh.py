@@ -24,7 +24,7 @@ with torch.cuda.device(opt.device),torch.no_grad():
     m.restore_checkpoint(opt)
 
     t = torch.linspace(*opt.trimesh.range,opt.trimesh.res+1) # the best range might vary from model to model
-    query = torch.stack(torch.meshgrid(t,t,t),dim=-1)
+    query = torch.stack(torch.meshgrid(t,t,t,indexing="ij"),dim=-1)
     query_flat = query.view(-1,3)
 
     density_all = []
